@@ -1,14 +1,13 @@
-import './footer.css';
+import './footer.css'
 
-export default function footer() {
+export default function Navbar() {
     return(
-        <div className="bg-[#2C2C2C]">
-            <footer>
-                <div className="flex gap-1 px-2 py-3 place-content-center">
-                    <span>Designed and Developed</span>
-                    <span className="text-red-500">Dinesh SriSanth Adari</span>
+        <div className="app">
+            <div className="w-screen flex justify-center">
+                <div className="flex w-3/4 px-2 py-3 font-inter justify-center items-center bg-black footer">
+                    <span>Developed by Dinesh SriSanth Adari</span>
                 </div>
-            </footer>
+            </div>
         </div>
-    );
+    ); 
 }
