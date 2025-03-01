@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@vercel/speed-insights':
+        specifier: ^1.2.0
+        version: 1.2.0(next@15.1.7(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react@19.0.0)
       next:
         specifier: 15.1.7
         version: 15.1.7(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
@@ -392,6 +395,29 @@ packages:
   '@typescript-eslint/visitor-keys@8.24.0':
     resolution: {integrity: sha512-kArLq83QxGLbuHrTMoOEWO+l2MwsNS2TGISEdx8xgqpkbytB07XmlQyQdNDrCc1ecSqx0cnmhGvpX+VBwqqSkg==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
+  '@vercel/speed-insights@1.2.0':
+    resolution: {integrity: sha512-y9GVzrUJ2xmgtQlzFP2KhVRoCglwfRQgjyfY607aU0hh0Un6d0OUyrJkjuAlsV18qR4zfoFPs/BiIj9YDS6Wzw==}
+    peerDependencies:
+      '@sveltejs/kit': ^1 || ^2
+      next: '>= 13'
+      react: ^18 || ^19 || ^19.0.0-rc
+      svelte: '>= 4'
+      vue: ^3
+      vue-router: ^4
+    peerDependenciesMeta:
+      '@sveltejs/kit':
+        optional: true
+      next:
+        optional: true
+      react:
+        optional: true
+      svelte:
+        optional: true
+      vue:
+        optional: true
+      vue-router:
+        optional: true
 
   acorn-jsx@5.3.2:
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
@@ -2014,6 +2040,11 @@ snapshots:
       '@typescript-eslint/types': 8.24.0
       eslint-visitor-keys: 4.2.0
 
+  '@vercel/speed-insights@1.2.0(next@15.1.7(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react@19.0.0)':
+    optionalDependencies:
+      next: 15.1.7(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      react: 19.0.0
+
   acorn-jsx@5.3.2(acorn@8.14.0):
     dependencies:
       acorn: 8.14.0
@@ -2434,7 +2465,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-module-utils@2.12.0(@typescript-eslint/parser@8.24.0(eslint@9.20.1(jiti@1.21.7))(typescript@5.7.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.8.0)(eslint@9.20.1(jiti@1.21.7)):
+  eslint-module-utils@2.12.0(@typescript-eslint/parser@8.24.0(eslint@9.20.1(jiti@1.21.7))(typescript@5.7.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.8.0(eslint-plugin-import@2.31.0)(eslint@9.20.1(jiti@1.21.7)))(eslint@9.20.1(jiti@1.21.7)):
     dependencies:
       debug: 3.2.7
     optionalDependencies:
@@ -2456,7 +2487,7 @@ snapshots:
       doctrine: 2.1.0
       eslint: 9.20.1(jiti@1.21.7)
       eslint-import-resolver-node: 0.3.9
-      eslint-module-utils: 2.12.0(@typescript-eslint/parser@8.24.0(eslint@9.20.1(jiti@1.21.7))(typescript@5.7.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.8.0)(eslint@9.20.1(jiti@1.21.7))
+      eslint-module-utils: 2.12.0(@typescript-eslint/parser@8.24.0(eslint@9.20.1(jiti@1.21.7))(typescript@5.7.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.8.0(eslint-plugin-import@2.31.0)(eslint@9.20.1(jiti@1.21.7)))(eslint@9.20.1(jiti@1.21.7))
       hasown: 2.0.2
       is-core-module: 2.16.1
       is-glob: 4.0.3
